@@ -26,6 +26,10 @@ public class Ccbp1Application {
 	public String toString() {
 		return "Hello";
 	}
+	@GetMapping("/test")
+    public String test() {
+        return "Hello!!!!!";
+    }
 
 
 }
