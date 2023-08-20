@@ -10,8 +10,11 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@Configuration
 @EnableSwagger2
 @ComponentScan
+@EnableAutoConfiguration
+
 
 public class Ccbp1Application { 
 
