@@ -27,14 +27,16 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 public class AccountController {
 	
-	@GetMapping("/test")
-    public String test() {
-        return "Account!!!!!";
-    }
+	
 		@Autowired
 		AccountService accountserviceimp;
 		
 		String details = "Account Not Found";
+
+               @GetMapping("/test")
+                  public String test() {
+                  return "Account!!!!!";
+                }
 		
 		
 		@PostMapping(value="/addaccount",consumes = "application/json")
